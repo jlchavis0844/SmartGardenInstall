@@ -1,0 +1,1 @@
+{"password": "password1", "user": "testUser", "Garden": {"hardware": {"tempChan": [0, 1], "moistName": ["moist0", "moist1"], "moistChan": [19, 18], "tempNames": ["temp0", "temp1"]}, "Name": "defaultGarden"}}
