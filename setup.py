@@ -17,7 +17,7 @@ print(list2)
 #start to registration process
 # if os.path.isfile("./gardenData.conf") == False:
 #     print("No install detected, do you want to run the setup process?")
-#     answer = raw_input("Enter Y to cotinue, anything else to quit\n")
+#     answer = raw_input("Enter Y to continue, anything else to quit\n")
 #     print(answer in goodAnswers)
 #     if (answer in goodAnswers):
 #         register.register()

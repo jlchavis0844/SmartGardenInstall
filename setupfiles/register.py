@@ -6,7 +6,7 @@ pass1 = '';
 pass2 = ''
 
 #User = userName, pass1 and pass2 should be the same
-#This function returns true if reistration succeeds, false otherwise.
+#This function returns true if registration succeeds, false otherwise.
 def sendReg(user, pass1, pass2):
     urlBase = 'http://76.94.123.147:49180/register.php?user=' \
                 + user + '&password=' + pass1

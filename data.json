@@ -1,1 +1,1 @@
-{"password": "password1", "user": "testUser", "Garden": {"hardware": [{"tempNames": ["temp0", "temp1"]}, {"tempChan": [0, 1]}, {"moistNames": ["moist0", "moist1"]}, {"tempChan": [0, 1]}], "Name": "defaultGard"}}
+{"password": "test", "user": "testUser3", "Gardens": {"Garden2": [{"TempNames": ["t5", "t6"]}, {"TempChan": ["5", "6"]}, {"MoistNames": ["m5", "m6"]}, {"MoistChan": ["5", "6"]}], "Garden1": [{"TempNames": ["t1", "t2"]}, {"TempChan": ["1", "2"]}, {"MoistNames": ["m1", "m2"]}, {"MoistChan": ["1", "2"]}]}}

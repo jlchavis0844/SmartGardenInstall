@@ -1,13 +1,12 @@
 #this file will take input from the user to get sensor names and channels
 #this will return two lists, the moisture sensor name list and the channel list
 #return sensorName list then sesorChan list
-tempNames = []
-tempChan = []
-moistNames = []
-moistChan = []
+
 GardenName = ""
 
 def moistSetup():
+    moistNames = []
+    moistChan = []
     stopBool = False
     while stopBool == False:    
         tempVal = raw_input('enter the sensor name, \'exit\' to quit\n')
@@ -19,8 +18,11 @@ def moistSetup():
             tempVal = raw_input('Enter the channel ' + tempVal + ' is on\n')
             moistChan.append(tempVal)
     #end while loop
+    return moistNames, moistChan
 
 def tempSetup():
+    tempNames = []
+    tempChan = []
     stopBool = False
     while stopBool == False:    
         tempVal = raw_input('enter the sensor name, \'exit\' to quit\n')
@@ -31,11 +33,16 @@ def tempSetup():
             tempNames.append(tempVal)
             tempVal = raw_input('Enter the channel ' + tempVal + ' is on\n')
             tempChan.append(tempVal)
+    #end while loop
+    return tempNames, tempChan
             
 def makeGarden():
     GardenName = raw_input('Enter the name for this garden\n')
     print('Please enter information for the temp sensors\n')
-    tempSetup()
+    tempName, tempChan = tempSetup()
     print('Please enter information for the moisture sensors\n')
-    moistSetup()
+    moistNames, moistChan = moistSetup()
+    return GardenName, tempName, tempChan, moistNames, moistChan
+
+#print(makeGarden())
     
