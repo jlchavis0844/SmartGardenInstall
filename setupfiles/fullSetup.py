@@ -3,11 +3,19 @@ Created on Oct 6, 2016
 
 @author: James
 """
+
 import json
-import setupfiles.register
+import setupfiles.register.old
 import setupfiles.gardenSetup
+import Adafruit_Python_DHT.ez_setup
+import Adafruit_Python_MCP3008.ez_setup
 
 def fullSetup():
+    print('installing DHT files')
+    Adafruit_Python_DHT.ez_setup.main()
+    print('installing MCP files')
+    Adafruit_Python_MCP3008.ez_setup.main()
+    
     stopBool = False
     data = {}
     tempNames= {}
@@ -17,7 +25,7 @@ def fullSetup():
     garden ={}
     goodAnswers = ['y', 'Y', 'yes', 'Yes', 'YES']
     
-    user, password = setupfiles.register.register()
+    user, password = setupfiles.register.old.old()
     data["user"] = user
     data["password"] = password
     

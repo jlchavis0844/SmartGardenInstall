@@ -1,3 +1,8 @@
+'''
+Created on Oct 10, 2016
+
+@author: James
+'''
 # call register() function which will continue to run until registration works.
 import urllib2 #HTTP connections
 goodReg = False;
