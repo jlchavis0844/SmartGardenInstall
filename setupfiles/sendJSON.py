@@ -3,7 +3,7 @@ Created on Oct 10, 2016
 
 @author: James
 '''
-import httplib, urllib2
+import httplib
 import json
 import sys, os
 

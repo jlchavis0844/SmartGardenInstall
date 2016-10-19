@@ -1,1 +1,1 @@
-{"password": "test", "user": "Testies", "Gardens": {"Garden6": [{"TempNames": ["Sensor2"]}, {"TempChan": ["6"]}, {"MoistNames": ["moist2", "moist3"]}, {"MoistChan": ["2", "3"]}]}}
+{"updated": "2016-10-18 19:21:34", "password": "garden", "user": "TedsGarden", "Gardens": {"tedsgarden": [{"TempNames": []}, {"TempChan": []}, {"MoistNames": []}, {"MoistChan": []}]}}

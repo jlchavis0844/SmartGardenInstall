@@ -10,26 +10,21 @@ boolStop = False
 #start registration process
 if os.path.isfile("./data.json") == False:
     print("No install detected, do you want to run the complete setup process?")
-    answer = raw_input("Enter Y to continue, anything else to quit\n")
-    print(answer in goodAnswers)
+    print("This will install all necessary files and run registration and setup")
+    answer = raw_input("Enter Y to continue, anything else to continue\n")
     
     if (answer in goodAnswers):
-        setupfiles.fullSetup.fullSetup()
-        exit()
+        setupfiles.fullSetup.installFiles()
         
-# print('What would you like to do instead?')
-# print('1. add a new garden')
-# print('2. delete a garden')
-# print('3. view config file to adjust gardens')
-# 
-# answer = raw_input('Enter 1-3 : \t')
-# 
-# while boolStop == False:
-#     if answer == 1:
-#         pass
-#     elif answer == 2:
-#         pass
-#     elif answer == 3:
-#         pass
-#     else:
-#         pass
+print("Enter Y to continue with the setup without install")
+answer = raw_input("Enter anything else to quit")
+if(answer in goodAnswers):
+    setupfiles.fullSetup.fullSetup()
+    
+if os.path.isfile("./data.json") == True:
+    answer = raw_input("would you like to launch the config file to change values?")
+    if(answer in goodAnswers):
+        os.system("start data.json")
+       
+print 'Goodbye'
+exit()

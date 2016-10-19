@@ -38,11 +38,12 @@ def tempSetup():
             
 def makeGarden():
     GardenName = raw_input('Enter the name for this garden\n')
+    gDesc = raw_input('Enter a description for this garden\n')
     print('Please enter information for the temp sensors\n')
     tempName, tempChan = tempSetup()
     print('Please enter information for the moisture sensors\n')
     moistNames, moistChan = moistSetup()
-    return GardenName, tempName, tempChan, moistNames, moistChan
+    return GardenName, tempName, tempChan, moistNames, moistChan, gDesc
 
 #print(makeGarden())
     
