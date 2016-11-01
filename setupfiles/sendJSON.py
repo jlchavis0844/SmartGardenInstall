@@ -9,9 +9,9 @@ import sys, os
 
 headers = { "charset" : "utf-8", "Content-Type": "application/json" }
 path = os.path.dirname(os.path.dirname(sys.argv[0]))
-filename = os.path.join(path, 'data.json')
+filename = os.path.join(path, 'config.json')
   
-url = '76.94.123.147:49180'
+url = 'jchavis.hopto.org:49180'
   
 conn = httplib.HTTPConnection(url)
 
